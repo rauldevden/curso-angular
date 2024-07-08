@@ -20,7 +20,7 @@
       {{character.name}} - Power: {{character.power}}
       <button
         class="btn btn-danger"
-        (click)="onDeleteCharacter(index)"
+        (click)="onDeleteCharacter(character.id)"
       >X</button>
       <!-- <b
         *ngIf="isFirst">

@@ -57,8 +57,8 @@ export class DbzService {
     this.characters.push(newCharacter);
   }
 
-  deleteCharacter(index: number) : void{
-    this.characters.splice(index,1)
+  deleteCharacterById(id: string) : void{
+    this.characters = this.characters.filter(character => character.id !== id)
   }
 
 }
